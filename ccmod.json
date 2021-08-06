@@ -1,0 +1,11 @@
+{
+  "id": "cc-lucrative-deal",
+  "title": "Lucrative Deal",
+  "version": "1.0.0",
+
+  "description": "Adds a new proposition in Basin Keep... one you can't refuse.",
+  "homepage": "https://github.com/Paradragon/cc-lucrative-deal",
+  "icons": {
+    "24": "icon.png"
+  }
+}

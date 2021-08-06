@@ -1,0 +1,1197 @@
+[{
+	"type": "ENTER",
+	"index": ["entities"]
+}, 
+{
+    "type": "ADD_ARRAY_ELEMENT",
+    "content":         {
+        "type": "NPC",
+        "x": 428,
+        "y": 1485,
+        "level": 0,
+        "settings": {
+            "mapId": 840,
+            "npcStates": [
+                {
+                    "reactType": "FIXED_POS",
+                    "face": "EAST",
+                    "action": [],
+                    "hidden": false,
+                    "condition": "",
+                    "config": "normal",
+                    "event": [
+                        {
+                            "person": {
+                                "person": "miners.male-brownshirt-white",
+                                "expression": "DEFAULT"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "LEFT",
+                            "order": 0,
+                            "clearSide": false
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "SURPRISED"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "RIGHT",
+                            "order": 0,
+                            "clearSide": false
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "DEFAULT"
+                            },
+                            "message": {
+                                "en_US": "Hi."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "I know, what you're wondering..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "What's in the garbage bag?"
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "type": "IF",
+                            "withElse": true,
+                            "condition": "lea.words.what",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "main.lea",
+                                        "expression": "SURPRISED_TOWARD"
+                                    },
+                                    "message": {
+                                        "en_US": "What?"
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ],
+                            "elseStep": [
+                                {
+                                    "person": {
+                                        "person": "main.lea",
+                                        "expression": "SURPRISED_TOWARD"
+                                    },
+                                    "message": {
+                                        "en_US": "...?"
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "I could tell you..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "DEFAULT"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "NERVOUS"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "It's \\c[3]trash\\c[0], my friend."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "ANNOYED"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "But what you may NOT know..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "Is that one man's \\c[3]trash\\c[0] is another man's \\c[3]treasure\\c[0]."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "All you need is the right customer."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "THINKING"
+                            },
+                            "message": {
+                                "en_US": "...?"
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Apollo",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "antagonists.fancyguy",
+                                        "expression": "SHOUTING"
+                                    },
+                                    "type": "ADD_MSG_PERSON",
+                                    "order": 0,
+                                    "side": "RIGHT"
+                                },
+                                {
+                                    "person": {
+                                        "person": "antagonists.fancyguy",
+                                        "expression": "SHOUTING"
+                                    },
+                                    "message": {
+                                        "en_US": "This man looks quite suspicious to me."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "person": "antagonists.fancyguy",
+                                        "expression": "POINTING"
+                                    },
+                                    "message": {
+                                        "en_US": "Beware of his tricks, Spheromancer Lea!"
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Emilie",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "main.emilie",
+                                        "expression": "CURIOUS"
+                                    },
+                                    "type": "ADD_MSG_PERSON",
+                                    "side": "RIGHT",
+                                    "order": 0,
+                                    "clearSide": false
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.emilie",
+                                        "expression": "CURIOUS"
+                                    },
+                                    "message": {
+                                        "en_US": "What's he talking about? Trash is treasure?"
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.emilie",
+                                        "expression": "DETERMINED"
+                                    },
+                                    "message": {
+                                        "en_US": "Can we sell it?!"
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Glasses",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "main.glasses",
+                                        "expression": "EMBARRASSED"
+                                    },
+                                    "type": "ADD_MSG_PERSON",
+                                    "side": "RIGHT",
+                                    "order": 0,
+                                    "clearSide": false
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.glasses",
+                                        "expression": "EMBARRASSED"
+                                    },
+                                    "message": {
+                                        "en_US": "Uhm... right... I think we should go."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Joern",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "antagonists.sidekick",
+                                        "expression": "EMBARRASSED"
+                                    },
+                                    "type": "ADD_MSG_PERSON",
+                                    "side": "RIGHT",
+                                    "order": 0,
+                                    "clearSide": false
+                                },
+                                {
+                                    "person": {
+                                        "person": "antagonists.sidekick",
+                                        "expression": "SARCASTIC"
+                                    },
+                                    "message": {
+                                        "en_US": "Poor guy lost his wits."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Schneider",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "main.schneider",
+                                        "expression": "COMPLAINING"
+                                    },
+                                    "type": "ADD_MSG_PERSON",
+                                    "side": "RIGHT",
+                                    "order": 0,
+                                    "clearSide": false
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.schneider",
+                                        "expression": "COMPLAINING"
+                                    },
+                                    "message": {
+                                        "en_US": "You won't believe how much I empathise with him."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Luke",
+                            "thenStep": [
+                                {
+                                    "type": "IF",
+                                    "withElse": true,
+                                    "condition": "party.has.Schneider",
+                                    "thenStep": [
+                                        {
+                                            "person": {
+                                                "person": "main.luke",
+                                                "expression": "COMPLAINING"
+                                            },
+                                            "type": "ADD_MSG_PERSON",
+                                            "side": "RIGHT",
+                                            "order": 0,
+                                            "clearSide": false
+                                        },
+                                        {
+                                            "person": {
+                                                "person": "main.luke",
+                                                "expression": "COMPLAINING"
+                                            },
+                                            "message": {
+                                                "en_US": "Yeah, right?"
+                                            },
+                                            "type": "SHOW_MSG"
+                                        }
+                                    ],
+                                    "elseStep": [
+                                        {
+                                            "person": {
+                                                "person": "main.luke",
+                                                "expression": "COMPLAINING"
+                                            },
+                                            "type": "ADD_MSG_PERSON",
+                                            "side": "RIGHT",
+                                            "order": 0,
+                                            "clearSide": false
+                                        },
+                                        {
+                                            "person": {
+                                                "person": "main.luke",
+                                                "expression": "COMPLAINING"
+                                            },
+                                            "message": {
+                                                "en_US": "You won't believe how much I empathise with him."
+                                            },
+                                            "type": "SHOW_MSG"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "IF",
+                            "condition": "party.has.Shizuka",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "person": "main.shizuka",
+                                        "expression": "SARCASTIC"
+                                    },
+                                    "type": "ADD_MSG_PERSON",
+                                    "side": "RIGHT",
+                                    "order": 0,
+                                    "clearSide": false
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.shizuka",
+                                        "expression": "SARCASTIC"
+                                    },
+                                    "message": {
+                                        "en_US": "I have so many questions, Satoshi."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "Speaking of which..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "antagonists.fancyguy"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "main.emilie"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "main.glasses"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "antagonists.sidekick"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "main.schneider"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "main.luke"
+                        },
+                        {
+                            "type": "REMOVE_MSG_PERSON",
+                            "person": "main.shizuka"
+                        },
+                        {
+                            "type": "SET_MSG_EXPRESSION",
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "DEFAULT"
+                            }
+                        },
+                        {
+                            "type": "IF",
+                            "withElse": true,
+                            "condition": "item.503.amount > 0",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "You happen to have just what I'm looking for..."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "\\c[3]\\v[item.503.amount]\\c[0] of it to be exact. Hard to miss that smell."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.lea",
+                                        "expression": "MOPING"
+                                    },
+                                    "message": {
+                                        "en_US": "..."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "If you'd like to part with some of that \\c[3]trash\\c[0], come back to me."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "I'll make it worth your while, my friend. Trust me."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ],
+                            "elseStep": [
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "If you find some \\c[3]trash\\c[0] you don't need, come back to me."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "person": "main.lea",
+                                        "expression": "NERVOUS"
+                                    },
+                                    "message": {
+                                        "en_US": "Why?"
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "Like I said before..."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "One man's \\c[3]trash\\c[0] is another man's \\c[3]treasure\\c[0]."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "I'll make it worth your while, my friend. Trust me."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ]
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "SHAKE_EYE_CLOSED"
+                            },
+                            "message": {
+                                "en_US": "Bye."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "person": "miners.male-brownshirt-white",
+                                "expression": "DEFAULT"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "LEFT",
+                            "order": 0,
+                            "clearSide": false,
+                            "name": {
+                                "en_US": "Thorbelet"
+                            }
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "Name is Thorbelet by the way."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "ANNOYED",
+                                "person": "main.lea"
+                            },
+                            "message": {
+                                "en_US": "..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "type": "CHANGE_VAR_NUMBER",
+                            "varName": "map.thorbelet",
+                            "changeType": "add",
+                            "value": 1
+                        }
+                    ]
+                },
+                {
+                    "reactType": "FIXED_POS",
+                    "face": "EAST",
+                    "action": [],
+                    "hidden": false,
+                    "condition": "map.thorbelet > 0",
+                    "config": "normal",
+                    "event": [
+                        {
+                            "person": {
+                                "person": "miners.male-brownshirt-white",
+                                "expression": "DEFAULT"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "LEFT",
+                            "order": 0,
+                            "clearSide": false,
+                            "name": {
+                                "en_US": "Thorbelet"
+                            }
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "DEFAULT"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "RIGHT",
+                            "order": 0,
+                            "clearSide": false
+                        },
+                        {
+                            "type": "IF",
+                            "withElse": true,
+                            "condition": "item.503.amount == 0",
+                            "thenStep": [
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "Looks like you're out of anything valuable. Come back when you find some \\c[3]trash\\c[0]."
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "person": {
+                                        "expression": "MOPING",
+                                        "person": "main.lea"
+                                    },
+                                    "message": {
+                                        "en_US": "Bye."
+                                    },
+                                    "type": "SHOW_MSG"
+                                }
+                            ],
+                            "elseStep": [
+                                {
+                                    "person": {
+                                        "expression": "DEFAULT",
+                                        "person": "miners.male-brownshirt-white"
+                                    },
+                                    "message": {
+                                        "en_US": "You're back! Ready to part with all that \\c[3]trash\\c[0]?"
+                                    },
+                                    "type": "SHOW_MSG"
+                                },
+                                {
+                                    "0": [
+                                        {
+                                            "person": {
+                                                "expression": "NOD",
+                                                "person": "main.lea"
+                                            },
+                                            "message": {
+                                                "en_US": "[nods]"
+                                            },
+                                            "type": "SHOW_MSG"
+                                        },
+                                        {
+                                            "person": {
+                                                "expression": "DEFAULT",
+                                                "person": "miners.male-brownshirt-white"
+                                            },
+                                            "message": {
+                                                "en_US": "Wonderful! That's a deal, my friend!"
+                                            },
+                                            "type": "SHOW_MSG"
+                                        },
+                                        {
+                                            "type": "CHANGE_VAR_NUMBER",
+                                            "varName": "map.thorbelet.trashSold",
+                                            "changeType": "add",
+                                            "value": "item.503.amount"
+                                        },
+                                        {
+                                            "type": "CHANGE_VAR_NUMBER",
+                                            "varName": "item.503.amount",
+                                            "changeType": "set",
+                                            "value": 0
+                                        },
+                                        {
+                                            "msgType": "REMOVED",
+                                            "object": {
+                                                "en_US": "\\v[item.503.amount] \\v[item.503.name]"
+                                            },
+                                            "type": "SHOW_GET_MSG"
+                                        },
+                                        {
+                                            "item": "503",
+                                            "amount": 99,
+                                            "skip": true,
+                                            "type": "REMOVE_ITEM"
+                                        },
+                                        {
+                                            "person": {
+                                                "expression": "DEFAULT",
+                                                "person": "miners.male-brownshirt-white"
+                                            },
+                                            "message": {
+                                                "en_US": "Always a pleasure working with you."
+                                            },
+                                            "type": "SHOW_MSG"
+                                        },
+                                        {
+                                            "type": "IF",
+                                            "condition": "map.thorbelet == 1",
+                                            "thenStep": [
+                                                {
+                                                    "type": "REMOVE_MSG_PERSON",
+                                                    "person": "miners.male-brownshirt-white"
+                                                },
+                                                {
+                                                    "person": {
+                                                        "person": "main.lea",
+                                                        "expression": "SURPRISED"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "...!"
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "withElse": true,
+                                                    "condition": "lea.words.wait",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.lea",
+                                                                "expression": "SURPRISED"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "Wait!!"
+                                                            },
+                                                            "type": "SHOW_MSG"
+                                                        }
+                                                    ],
+                                                    "elseStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.lea",
+                                                                "expression": "SURPRISED"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "Hi!!"
+                                                            },
+                                                            "type": "SHOW_MSG"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "person": {
+                                                        "person": "miners.male-brownshirt-white",
+                                                        "expression": "DEFAULT"
+                                                    },
+                                                    "type": "ADD_MSG_PERSON",
+                                                    "side": "LEFT",
+                                                    "order": 0,
+                                                    "clearSide": false,
+                                                    "name": {
+                                                        "en_US": "Thorbelet"
+                                                    }
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "DEFAULT",
+                                                        "person": "miners.male-brownshirt-white"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "Hmm? What's the matter?"
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "HAND_POINT_DETERMINED",
+                                                        "person": "main.lea"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "...!!"
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "DEFAULT",
+                                                        "person": "miners.male-brownshirt-white"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "This ain't a charity, girl."
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "DEFAULT",
+                                                        "person": "miners.male-brownshirt-white"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "Besides... I've already made it worth your while, no?"
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "withElse": true,
+                                                    "condition": "lea.words.how",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "expression": "SURPRISED",
+                                                                "person": "main.lea"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "How?"
+                                                            },
+                                                            "type": "SHOW_MSG"
+                                                        }
+                                                    ],
+                                                    "elseStep": [
+                                                        {
+                                                            "person": {
+                                                                "expression": "SURPRISED",
+                                                                "person": "main.lea"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "...?"
+                                                            },
+                                                            "type": "SHOW_MSG"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "DEFAULT",
+                                                        "person": "miners.male-brownshirt-white"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "Eased your burden by taking all that trash from you... \\c[3]for free\\c[0]!!"
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "DEFAULT",
+                                                        "person": "miners.male-brownshirt-white"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "You should be grateful!"
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "type": "REMOVE_MSG_PERSON",
+                                                    "person": "miners.male-brownshirt-white"
+                                                },
+                                                {
+                                                    "person": {
+                                                        "expression": "SAD",
+                                                        "person": "main.lea"
+                                                    },
+                                                    "message": {
+                                                        "en_US": "..."
+                                                    },
+                                                    "type": "SHOW_MSG"
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Apollo",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "antagonists.fancyguy",
+                                                                "expression": "POINTING"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "antagonists.fancyguy",
+                                                                "expression": "POINTING"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "I knew it! Never trust a man obsessed with garbage!"
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Emilie",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.emilie",
+                                                                "expression": "MOPING"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "main.emilie",
+                                                                "expression": "MOPING"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "What a jerk."
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Glasses",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.glasses",
+                                                                "expression": "MOPING"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "main.glasses",
+                                                                "expression": "EXHAUSTED"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "That wasn't very kind of him."
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Joern",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "antagonists.sidekick",
+                                                                "expression": "ANGRY"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "antagonists.sidekick",
+                                                                "expression": "ANGRY"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "How rude."
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Luke",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.Luke",
+                                                                "expression": "PISSED"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "main.Luke",
+                                                                "expression": "PISSED"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "Wish we could punch NPCs. My fists are itching."
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Schneider",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.schneider",
+                                                                "expression": "PISSED"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "main.schneider",
+                                                                "expression": "PISSED"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "Never thought I'll be pissed from stolen trash."
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "IF",
+                                                    "condition": "party.has.Shizuka",
+                                                    "thenStep": [
+                                                        {
+                                                            "person": {
+                                                                "person": "main.shizuka",
+                                                                "expression": "SARCASTIC"
+                                                            },
+                                                            "type": "ADD_MSG_PERSON",
+                                                            "order": 0,
+                                                            "side": "RIGHT"
+                                                        },
+                                                        {
+                                                            "person": {
+                                                                "person": "main.shizuka",
+                                                                "expression": "SARCASTIC"
+                                                            },
+                                                            "message": {
+                                                                "en_US": "He's got a point though... we don't have that useless trash anymore."
+                                                            },
+                                                            "type": "SHOW_MSG",
+                                                            "autoContinue": false
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "CHANGE_VAR_NUMBER",
+                                            "varName": "map.thorbelet",
+                                            "changeType": "add",
+                                            "value": 1
+                                        }
+                                    ],
+                                    "1": [
+                                        {
+                                            "person": {
+                                                "expression": "SHAKE",
+                                                "person": "main.lea"
+                                            },
+                                            "message": {
+                                                "en_US": "[shakes head]"
+                                            },
+                                            "type": "SHOW_MSG"
+                                        },
+                                        {
+                                            "person": {
+                                                "expression": "DEFAULT",
+                                                "person": "miners.male-brownshirt-white"
+                                            },
+                                            "message": {
+                                                "en_US": "Oh well... come back when you change your mind, my friend."
+                                            },
+                                            "type": "SHOW_MSG"
+                                        }
+                                    ],
+                                    "type": "SHOW_CHOICE",
+                                    "person": {
+                                        "person": "main.lea",
+                                        "expression": "SURPRISED_AWAY"
+                                    },
+                                    "options": [
+                                        {
+                                            "0": " ",
+                                            "label": {
+                                                "en_US": "Yes"
+                                            }
+                                        },
+                                        {
+                                            "0": " ",
+                                            "label": {
+                                                "en_US": "No"
+                                            }
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "characterName": "miners.male-brownbeard-white",
+            "analyzable": {
+                "text": {
+                    "en_US": "Thorbelet"
+                },
+                "active": "map.thorbelet > 0"
+            },
+            "name": "Thorbelet"
+        }
+    }
+},
+{
+	"type": "EXIT",
+	"count": 1
+}]
