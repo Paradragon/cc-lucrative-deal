@@ -17,7 +17,177 @@
                     "face": "EAST",
                     "action": [],
                     "hidden": false,
-                    "condition": "",
+                    "condition": "lucrativeDealTrailer",
+                    "config": "normal",
+                    "event": [
+                        {
+                            "person": {
+                                "person": "miners.male-brownshirt-white",
+                                "expression": "DEFAULT"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "LEFT",
+                            "order": 0,
+                            "clearSide": false
+                        },
+                        {
+                            "person": {
+                                "person": "main.lea",
+                                "expression": "DEFAULT"
+                            },
+                            "type": "ADD_MSG_PERSON",
+                            "side": "RIGHT",
+                            "order": 0,
+                            "clearSide": false
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "main.lea"
+                            },
+                            "message": {
+                                "en_US": "Hi."
+                            },
+                            "type": "SHOW_MSG"
+                        },    
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "I know, what you're wondering..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "What is this mod about?"
+                            },
+                            "type": "SHOW_MSG"
+                        },   
+                        {
+                            "person": {
+                                "expression": "SURPRISED_TOWARD",
+                                "person": "main.lea"
+                            },
+                            "message": {
+                                "en_US": "...?"
+                            },
+                            "type": "SHOW_MSG"
+                        },        
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "I could tell you..."
+                            },
+                            "type": "SHOW_MSG"
+                        },            
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "But then I'll have to kill you."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "SCARED",
+                                "person": "main.lea"
+                            },
+                            "message": {
+                                "en_US": "...?!"
+                            },
+                            "type": "SHOW_MSG"
+                        }, 
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "We don't want that, right?"
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "SHAKE_SCARED",
+                                "person": "main.lea"
+                            },
+                            "message": {
+                                "en_US": "[shakes head]"
+                            },
+                            "type": "SHOW_MSG"
+                        }, 
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "Then download \\c[3]cc-lucrative-deal\\c[0] and see for yourself, what this is all about."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "It's only slightly longer than this recording."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "Because until you do..."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "DEFAULT",
+                                "person": "miners.male-brownshirt-white"
+                            },
+                            "message": {
+                                "en_US": "The bluehaired Spheromancer will \\c[1]stay with me\\c[0]."
+                            },
+                            "type": "SHOW_MSG"
+                        },
+                        {
+                            "person": {
+                                "expression": "SHOCKED",
+                                "person": "main.lea"
+                            },
+                            "message": {
+                                "en_US": "...!!"
+                            },
+                            "type": "SHOW_MSG"
+                        }
+                    ]
+                },
+                {
+                    "reactType": "FIXED_POS",
+                    "face": "EAST",
+                    "action": [],
+                    "hidden": false,
+                    "condition": "!lucrativeDealTrailer",
                     "config": "normal",
                     "event": [
                         {
